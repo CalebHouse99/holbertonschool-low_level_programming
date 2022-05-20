@@ -1,2 +1,2 @@
 #!/bin/bash8
-gcc -E $CFILE -o *.o
+gcc -E $CFILE -o $CFILE.o
