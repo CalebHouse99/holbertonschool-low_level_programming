@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-putchar("_putchar\n");
+ch="_putchar\n";
+putchar(ch);
 return (0);
 }
