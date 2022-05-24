@@ -7,5 +7,5 @@
  */
 int main(void)
 {
-printf(_putchar)
+_putchar();
 }
