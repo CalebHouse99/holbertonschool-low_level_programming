@@ -2,9 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - prints last digit of variable n
- *
- * @n: random number
+ * main - prints last digit of variable
  *
  * Return: 0 always
  */
