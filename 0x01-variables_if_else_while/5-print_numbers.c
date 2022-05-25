@@ -7,10 +7,9 @@
 int main(void)
 {
 int i;
-char ch = "0123456789";
 for (i = 0; i < 10; i++)
 {
-putchar(ch);
+putchar(i);
 }
 putchar('\n');
 return (0);
