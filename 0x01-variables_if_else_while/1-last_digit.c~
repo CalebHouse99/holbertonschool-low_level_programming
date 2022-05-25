@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - prints last digit of variable n
+ *
+ * @n: random number
+ *
+ * Return: 0 always
+ */
+int main(void)
+{
+  int n;
+  int v;
+  
+  srand(time(0));
+  n = rand() - RAND_MAX / 2;
+  v = n % 10;
+  if (v > 5)
+    {
+      printf(n + '');
+    }
+return (0);
+}
