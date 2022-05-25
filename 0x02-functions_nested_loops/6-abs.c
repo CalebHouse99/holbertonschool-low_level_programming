@@ -5,7 +5,7 @@
  *@i: integer
  * Return: 0
  */
-int _abs(int i);
+int _abs(int i)
 {
 if (n < 0)
 {
