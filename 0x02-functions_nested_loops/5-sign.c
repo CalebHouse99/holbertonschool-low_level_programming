@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * _isalpha - Print the alphabet
+ * print_sign - Print the sign
  *@n: number
  * Return: 0
  */
