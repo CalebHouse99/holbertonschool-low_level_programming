@@ -5,7 +5,8 @@
  *
  * Return: n
  */
-void print_to_98(void)
+void print_to_98(int n)
 {
+n = 1;
 return (0);
 }
