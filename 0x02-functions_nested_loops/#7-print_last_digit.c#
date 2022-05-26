@@ -13,7 +13,6 @@ if (i < 0)
 {
 i = -i;
 n = i % 10;
-return (n);
 }
 if (n < 0)
 {
