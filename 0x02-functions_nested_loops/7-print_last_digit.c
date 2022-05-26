@@ -13,11 +13,10 @@ if (i < 0)
 {
 i = -i;
 n = i % 10;
-return (n);
 }
 if (n < 0)
 {
 putchar(n + '0');
-return (n);
 }
+return (n);
 }
