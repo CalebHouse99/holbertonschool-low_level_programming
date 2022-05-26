@@ -3,9 +3,9 @@
 /**
  * print_to_98 - prints n to 98
  *
- * Return: 0
+ * Return: n
  */
 void print_to_98(int n)
 {
-
+return (n);
 }
