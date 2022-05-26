@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 #include"main.h"
 /**
  * print_last_digit - prints the last digit
@@ -17,8 +16,7 @@ n = i % 10;
 }
 if (n < 0)
 {
-putchar(n + '0');
+_putchar(n + '0');
 }
-char x = strcat(n, n);
-return (x);
+return (n);
 }
