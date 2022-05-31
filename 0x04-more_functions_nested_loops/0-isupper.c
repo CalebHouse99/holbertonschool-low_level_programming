@@ -3,8 +3,8 @@
 
 /**
  * _isupper - checks for uppercase
- *
- * Return : Always 0
+ * @c: integer
+ * Return: 1 or 0
  */
 int _isupper(int c)
 {
