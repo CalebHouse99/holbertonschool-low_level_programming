@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * test - assign random number to variable
+ * compute - assign random number to variable
  *
  * Return: 0
  */
-int main(void)
+int compute(void)
 {
 int n;
 srand(time(0));
