@@ -10,7 +10,7 @@ void print_numbers(void)
 int i;
 char ch[] = "0123456789";
 
-for (i = 0; i < 10; i++)
+while (i < 10)
 {
 putchar(ch[i]);
 }
