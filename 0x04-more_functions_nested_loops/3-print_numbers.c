@@ -4,7 +4,7 @@
 /**
  * print_numbers - prints numbers
  *
- * Return: void
+ * Return: Always 0.
  */
 void print_numbers(void)
 {
