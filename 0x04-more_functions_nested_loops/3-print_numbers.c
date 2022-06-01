@@ -8,11 +8,10 @@
 void print_numbers(void)
 {
 int i;
-char ch[] = "0123456789";
 
 while (i < 10)
 {
-putchar(ch[i]);
+putchar(i + 48);
 }
 putchar('\n');
 return (0);
