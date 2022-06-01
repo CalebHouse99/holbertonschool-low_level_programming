@@ -8,6 +8,7 @@
  */
 void print_numbers(void)
 {
+int i;
 char ch[] = "0123456789";
 
 for (i = 1; i < 11; i++)
