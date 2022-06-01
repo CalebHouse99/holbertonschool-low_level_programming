@@ -12,8 +12,8 @@ char ch[] = "0123456789";
 
 for (i = 0; i < 10; i++)
 {
-_putchar(ch[i]);
+putchar(ch[i]);
 }
-_putchar('\n');
+putchar('\n');
 return (0);
 }
