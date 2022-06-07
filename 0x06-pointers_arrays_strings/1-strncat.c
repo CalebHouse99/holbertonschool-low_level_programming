@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * _strcat - dest combines with src
+ * _strncat - dest combines with src
  * @dest: first string
  * @src: second string
  * @n: variable
