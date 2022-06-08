@@ -8,9 +8,16 @@
 char *_strchr(char *s, char c);
 {
 unsigned int a;
-for (a = 0; a == c; a++)
+while (s[a] != '\0')
 {
-c[s] = c[a];
-}
+if (s[a] == c)
+{
 return (s);
+}
+if (s[a] == c)
+{
+return (s);
+}
+}
+return (NULL);
 }
