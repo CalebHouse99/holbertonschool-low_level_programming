@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _memset - replaces characters
+ * _memcpy - replaces characters
  *@dest: destination
- *@b: filler
+ *@src: filler
  *@n: number of bytes
- * Return: 0
+ * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
