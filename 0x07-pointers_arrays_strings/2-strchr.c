@@ -5,7 +5,7 @@
  *@c: of this
  * Return: first character
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 for (;; s++)
 {
