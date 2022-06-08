@@ -23,10 +23,11 @@ if (s[a] == accept[b])
 count++;
 break;
 }
-}
 if (accept[b] == '\0')
+{
 break;
 a++;
+}
 }
 return (n);
 }
