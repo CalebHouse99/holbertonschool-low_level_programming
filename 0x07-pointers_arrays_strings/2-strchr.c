@@ -17,5 +17,6 @@ if (!*s)
 {
 return (NULL);
 }
+}
 return (NULL);
 }
