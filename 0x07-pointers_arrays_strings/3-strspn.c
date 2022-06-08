@@ -28,5 +28,5 @@ if (accept[b] == '\0')
 break;
 a++;
 }
-return (count);
+return (n);
 }
