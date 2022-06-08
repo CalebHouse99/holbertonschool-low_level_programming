@@ -12,11 +12,11 @@ while (s[a] != '\0')
 {
 if (s[a] == c)
 {
-return (s + i);
+return (s + a);
 }
 if (s[a] == c)
 {
-return (s + i);
+return (s + a);
 }
 }
 return (NULL);
