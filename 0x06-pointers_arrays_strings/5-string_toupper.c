@@ -1,20 +1,17 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *reverse_array - reverses the array
- *@a: array
- *@n: variable
- *Return: void
+ *string_toupper - changes lowercase to uppercase
+ *@n: number
+ *Return: character
  */
-void reverse_array(int *a, int n)
+char *string_toupper(char *n);
 {
-int b;
-int c;
-
-for (b = 0; b < n / 2; b++)
+if (n > 98  && n < 123)
 {
-c = a[b];
-a[b] = a[n - b - 1];
-a[n - b - 1] = c;
+n = n - 32;
+_putchar(n);
 }
+else
+_putchar(n + '0');
 }
