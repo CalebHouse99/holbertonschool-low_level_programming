@@ -24,7 +24,7 @@ return (find_square(n, a + 1));
 
 /**
  * _sqrt_recursion - function
- * 
+ *
  *@n: number
  *
  *
