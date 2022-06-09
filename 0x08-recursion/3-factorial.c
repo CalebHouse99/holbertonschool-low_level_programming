@@ -2,7 +2,7 @@
 /**
  * factorial - gets the factorial of a number
  *
- *
+ *@n: number
  *
  *
  * Return: factorial
