@@ -4,6 +4,7 @@
  *
  *@n: number
  *@a: number
+ * Return: find_square
  */
 int find_square(int n, int a)
 {
@@ -23,7 +24,7 @@ return (find_square(n, a + 1));
 
 /**
  * _sqrt_recursion - function
- *
+ * 
  *@n: number
  *
  *
