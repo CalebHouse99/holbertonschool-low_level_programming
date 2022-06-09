@@ -13,4 +13,8 @@ if (*s != '\0')
 {
 return (_strlen_recursion(s++));
 }
+else
+{
+return (0);
+}
 }
