@@ -37,6 +37,6 @@ return (-1);
 }
 else
 {
-return (squirt_r(n, 0));
+return (find_square(n, 0));
 }
 }
