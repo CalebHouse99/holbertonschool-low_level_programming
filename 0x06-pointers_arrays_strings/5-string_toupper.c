@@ -5,7 +5,7 @@
  *@n: number
  *Return: character
  */
-char *string_toupper(char *n);
+char *string_toupper(char *n)
 {
 if (n > 98  && n < 123)
 {
