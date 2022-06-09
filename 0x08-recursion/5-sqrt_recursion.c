@@ -17,7 +17,7 @@ return (a);
 }
 else
 {
-return (squirt_r(n, a + 1));
+return (find_square(n, a + 1));
 }
 }
 
