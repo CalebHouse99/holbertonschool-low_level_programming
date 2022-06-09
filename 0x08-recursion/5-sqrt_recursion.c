@@ -2,18 +2,23 @@
 /**
  * find_square - finds the square
  *
- *
- *
+ *@n: number
+ *@a: number
  */
 int find_square(int n, int a)
 {
 if (a * a > n)
+{
 return (-1);
-
+}
 if (a * a == n)
+{
 return (a);
-
+}
+else
+{
 return (squirt_r(n, a + 1));
+}
 }
 
 /**
