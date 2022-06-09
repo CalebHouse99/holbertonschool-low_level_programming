@@ -7,15 +7,15 @@
  */
 char *string_toupper(char *n)
 {
-if (n > 98  && n < 123)
+if (*n > 98  && *n < 123)
 {
-n = n - 32;
+*n = *n - 32;
 _putchar(*n);
-n = n + 32;
+*n = *n + 32;
 string_toupper(n + 1);
 }
 else
 {
-_putchar(n + '0');
+_putchar(*n + '0');
 }
 }
