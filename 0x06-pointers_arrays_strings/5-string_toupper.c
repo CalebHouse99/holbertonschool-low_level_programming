@@ -7,15 +7,14 @@
  */
 char *string_toupper(char *n)
 {
-if (*n > 98  && *n < 123)
+int i;
+
+for (i = 0; n[i] != '\0'; i++)
 {
-*n = *n - 32;
-_putchar(*n);
-*n = *n + 32;
-string_toupper(n + 1);
-}
-else
+if (n[i] >= 'a' && n[i] <= 'z')
 {
-_putchar(*n + '0');
+n[i] = n[i] - 32;
 }
+}
+return (n);
 }
