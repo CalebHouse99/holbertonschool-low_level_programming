@@ -1,0 +1,25 @@
+#include "holberton.h"
+
+/**
+ * leet - changes string to 1337
+ * @s: string
+ *
+ * Return: s
+ */
+
+char *leet(char *s)
+{
+  int i, j;
+  char o[] = "aAeEoOtTlL";
+  char n[] = "4433007711";
+
+  for (i = 0; *(s + i); i++)
+    {
+      for (j = 0; j <= 9; j++)
+	{
+	  if (o[j] == *(s + i))
+	    *(s + i) = n[j];
+	}
+    }
+  return (s);
+}
