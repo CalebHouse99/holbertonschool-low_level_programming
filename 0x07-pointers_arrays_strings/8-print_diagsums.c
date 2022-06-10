@@ -15,7 +15,7 @@ b = 0;
 c = 0;
 for (i = 0; i < size; i++)
 {
-b = c + a[(size + 1) * i];
+b = b + a[(size + 1) * i];
 c = c + a[(size - 1) * (i + 1)];
 }
 printf("%d, %d\n", b, c);
