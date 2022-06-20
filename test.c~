@@ -1,0 +1,9 @@
+#include<stdio.h>
+/**
+ * main - specific outcome
+ */
+char main()
+{
+printf(", but the outcome is a piece of art,");
+return (0);
+}
