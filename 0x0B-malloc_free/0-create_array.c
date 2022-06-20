@@ -1,8 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
  * create_array - creates array
+ *@size: size
+ *@c: character
  *
- *@a: character
+ * Return: NULL
  */
 char *create_array(unsigned int size, char c)
 {
@@ -13,7 +17,7 @@ if (size == 0)
 {
 return (NULL);
 }
-a = malloc (size *sizeof(char));
+a = malloc(size * sizeof(char));
 if (a == NULL)
 {
 return (NULL);
