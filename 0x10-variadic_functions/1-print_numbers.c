@@ -3,12 +3,32 @@
 #include <stdarg.h>
 
 /**
- * print_numbers -
+ * print_numbers - prints numbers, followed by a new line
  * @n: number of numbers
- *
- * Return: 
+ * @separator: string to be printed between numbers
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+va_list arguments;
+unsigned int g;
+
+va_start(arguments, n);
+
+if (n == 0)
+{
+printf('\n');
+}
+if (separator == NULL)
+{
+separator = " ";
+}
+
+for (g = 0; g < n - 1; g++)
+{
+printf("%d%s", va_arg(list, int), separator);
+}
+printf("%d\n", va_arg(arguments, int));
+
+va_end(arguments);
 }
