@@ -13,9 +13,10 @@ int sum_them_all(const unsigned int n, ...)
 {
 va_list arguments;
 int sum = 0;
+unsigned int g;
 
 va_start ( arguments, n );
-for (int g = 0; g < num; g++ )
+ for  (g = 0; g < n; g++ )
 {
 sum += va_arg (arguments, double);
 }
