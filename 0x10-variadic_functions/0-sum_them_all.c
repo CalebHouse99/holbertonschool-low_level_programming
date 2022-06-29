@@ -15,11 +15,11 @@ va_list arguments;
 int sum;
 unsigned int g;
 
-va_start ( arguments, n );
-for  (g = 0; g < n; g++ )
+va_start(arguments, n);
+for (g = 0; g < n; g++)
 {
-sum += va_arg (arguments, int);
+sum += va_arg(arguments, int);
 }
-va_end ( arguments );
+va_end(arguments);
 return (sum);
 }
