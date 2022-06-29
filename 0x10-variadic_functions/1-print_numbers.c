@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * print_numbers - prints numbers, followed by a new line
@@ -17,16 +18,17 @@ va_start(arguments, n);
 
 if (n == 0)
 {
-printf('\n');
+printf("\n");
+return;
 }
 if (separator == NULL)
 {
-separator = " ";
+separator = "";
 }
 
 for (g = 0; g < n - 1; g++)
 {
-printf("%d%s", va_arg(list, int), separator);
+printf("%d%s", va_arg(arguments, int), separator);
 }
 printf("%d\n", va_arg(arguments, int));
 
