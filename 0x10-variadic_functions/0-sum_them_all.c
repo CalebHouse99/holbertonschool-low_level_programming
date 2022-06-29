@@ -18,8 +18,8 @@ unsigned int g;
 va_start ( arguments, n );
 for  (g = 0; g < n; g++ )
 {
-sum += va_arg (arguments, double);
+sum += va_arg (arguments, int);
 }
-va_end ( arguments );
-return sum;
+va_end ( arguments )
+return (sum);
 }
