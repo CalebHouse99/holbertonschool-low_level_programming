@@ -20,6 +20,6 @@ for  (g = 0; g < n; g++ )
 {
 sum += va_arg (arguments, int);
 }
-va_end ( arguments )
+va_end ( arguments );
 return (sum);
 }
