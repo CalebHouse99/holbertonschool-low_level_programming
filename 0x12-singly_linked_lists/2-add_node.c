@@ -13,7 +13,10 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-
 	strdup(str);
-	struct list_t * new_node = malloc(sizeof(struct list_s));
+	struct list_s *new_node;
+	new_node = malloc(sizeof(struct list_s));
+	new_node->str=str;
+	new_node->next=head;
+	return (new_node);
 }
