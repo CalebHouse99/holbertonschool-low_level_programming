@@ -9,9 +9,13 @@
 * @head: pointer to the first node
 *
 * @str: first element of the node
+*
+* Return: NULL or address to new node
 */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
+	struct list_s *new_node;
+
 	
 }
