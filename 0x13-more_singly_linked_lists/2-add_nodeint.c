@@ -8,7 +8,7 @@
 *
 * @head: pointer to the first node
 *
-* @str: first element of the node
+* @n: first element of the node
 *
 * Return: NULL or address to new node
 */
