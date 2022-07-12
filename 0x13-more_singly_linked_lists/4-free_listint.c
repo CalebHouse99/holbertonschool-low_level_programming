@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
-* free_list - frees the list
+* free_listint - frees the list
 *
 * @head: pointer to the first node
 *
