@@ -33,11 +33,11 @@ unsigned int binary_to_uint(const char *b)
 				if (end == 1)
 				{
 					converted++;
-				} 
+				}
 				multiplier *= 2;
 				converted = end * multiplier;
 			}
 		}
-	}	
+	}
 	return (converted);
 }
