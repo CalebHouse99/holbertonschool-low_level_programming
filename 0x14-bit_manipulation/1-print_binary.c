@@ -16,7 +16,14 @@ void print_binary(unsigned long int n)
 
 	while (n != 0)
 	{
-		remainder = n % 2;
+		if (n & 1)
+		{
+			remainder = 1;
+		}
+		else
+		{
+			remainder = 0;
+		}
 		n = n / 2;
 		converted = converted + remainder * temp;
 		temp = temp * 10;
