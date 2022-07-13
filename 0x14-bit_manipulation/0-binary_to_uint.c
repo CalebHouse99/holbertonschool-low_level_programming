@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include <stddef.h>
 #include "main.h"
 
@@ -10,48 +12,31 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int converted;
+	unsigned int converted, multiplier = 1;
 	const char *str;
+	const char end = strlen(b - 1);
 
 	for (str = b; *b != '\0'; b++)
 	{
 		if (str == NULL)
+		{
 			return (0);
+		}
 		else if (*str != 1 && *str != 0)
+		{
 			return (0);
+		}
 		else
 		{
-			if (*str == '1')
-			converted = 128; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 64; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 32; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 16; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 8; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 4; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 2; 
-			str++;
-
-			if (*str == '1')
-			converted = converted + 1; 
-			str++;
+			while (end != *str)
+			{
+				if (end == 1)
+				{
+					converted++;
+				} 
+				multiplier *= 2;
+				converted = end * multiplier;
+			}
 		}
 	}	
 	return (converted);
