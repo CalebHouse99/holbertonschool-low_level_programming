@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "lists.h"
+#include "4-free_listint.c"
 
 /**
 * free_listint2 - frees the list
@@ -12,16 +13,6 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *temp;
-
-	if (head == NULL)
-		return;
-
-	while (*head)
-	{
-		temp = (*head)->next;
-		free(temp);
-		*head = temp;
-	}
-	head = NULL;
+	free_listint(**head);
+	*head = NULL;
 }
