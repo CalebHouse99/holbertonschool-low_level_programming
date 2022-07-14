@@ -28,5 +28,4 @@ void print_binary(unsigned long int n)
 		converted = converted + remainder * temp;
 		temp = temp * 10;
 	}
-	printf("%li", converted);
 }
