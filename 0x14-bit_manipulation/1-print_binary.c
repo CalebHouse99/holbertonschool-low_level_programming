@@ -12,26 +12,11 @@
 
 void print_binary(unsigned long int n)
 {
-	long converted = 0;
-	long remainder, temp = 1;
+	unsigned long int converted = n;
 
-	if (n == 0)
-		_putchar('0');
-
-	while (n != 0)
+	if (n > 1)
 	{
-		if (n & 1)
-		{
-			remainder = 1;
-			_putchar('1');
-		}
-		else
-		{
-			remainder = 0;
-			_putchar('0');
-		}
-		n = n >> 1;
-		converted = converted + (remainder * temp);
-		temp = temp * 10;
+		print_binary(n >> 1);
 	}
+	_putchar((converted & 1) + '0');
 }
