@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 		{
 			remainder = 0;
 		}
-		n = n / 2;
+		n = n >> 2;
 		converted = converted + remainder * temp;
 		temp = temp * 10;
 	}
