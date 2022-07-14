@@ -13,21 +13,13 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	long remainder = 1;
+	unsigned long int i;
 
-	n = n >> index;
-	remainder = n & 1;
+	if (index > sizeof(n) * 8)
+		return (-1);
 
-	if (remainder == 1)
-	{
-		return (-1);
-	}
-	else if (remainder == 0)
-	{
-		return (1);
-	}
-	else 
-	{
-		return (-1);
-	}
+	i = *n & ~(1 << index);
+	*n = i | (1 << index);
+	
+	return (1);
 }
