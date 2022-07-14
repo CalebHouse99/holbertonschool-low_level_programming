@@ -24,6 +24,7 @@ void print_binary(unsigned long int n)
 		{
 			remainder = 1;
 			_putchar('1');
+			
 		}
 		else
 		{
