@@ -12,32 +12,20 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int converted, multiplier = 1;
-	const char *str;
-	const char end = strlen(b - 1);
+	unsigned int converted, i = 1;
 
-	for (str = b; *b != '\0'; b++)
-	{
-		if (str == NULL)
+		if (b == NULL)
 		{
 			return (0);
 		}
-		else if (*str != 1 && *str != 0)
+	
+		while (b[i] == '0' || b[i] == '1')
 		{
-			return (0);
+			converted << 1;
+			converted += b[i] - '0';
+			i++;
+			if (b[i] >= '2')
+				return (0);
 		}
-		else
-		{
-			while (end != *str)
-			{
-				if (end == 1)
-				{
-					converted++;
-				}
-				multiplier *= 2;
-				converted = end * multiplier;
-			}
-		}
-	}
 	return (converted);
 }
