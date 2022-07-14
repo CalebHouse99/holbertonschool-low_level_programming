@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /**
 * print_binary - converts base 10 to binary
@@ -24,8 +25,9 @@ void print_binary(unsigned long int n)
 		{
 			remainder = 0;
 		}
-		n = n >> 2;
-		converted = converted + remainder * temp;
+		n = n >> 1;
+		converted = converted + (remainder * temp);
 		temp = temp * 10;
 	}
+	printf("%li", converted);
 }
