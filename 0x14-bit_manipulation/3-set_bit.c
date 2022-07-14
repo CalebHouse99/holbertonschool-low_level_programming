@@ -4,11 +4,11 @@
 #include <math.h>
 
 /**
-* get_bit - it gets the bit
+* set_bit - it sets the bit
 * @n: starting number
 * @index: index of the binary number
 *
-* Return: Binary converted number
+* Return: 1 on success, -1 on error
 */
 
 int set_bit(unsigned long int *n, unsigned int index)
@@ -20,6 +20,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	i = *n & ~(1 << index);
 	*n = i | (1 << index);
-	
+
 	return (1);
 }
