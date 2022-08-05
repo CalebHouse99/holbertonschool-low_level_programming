@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_dlistint_backward - prints the doubly linked list backwards
@@ -9,5 +10,14 @@
 
 size_t print_dlistint_backward(const dlistint_t *h)
 {
+	const dlistint_t *temp;
+	size_t len;
 
+	for( temp = h; temp->next != NULL; temp=temp->next)
+	{}
+	for( len = 1; temp->prev != NULL; temp = temp->prev, len++)
+	{
+		printf("%d\n", temp->n);
+	}
+	return (len);
 }
