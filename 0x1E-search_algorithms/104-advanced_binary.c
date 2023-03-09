@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int advanced_binary_helper(int *array, int value, int start, int end);
+#include "search_algos.h"
 
 /**
  * advanced_binary - Searches for a value in a sorted array of integers.
