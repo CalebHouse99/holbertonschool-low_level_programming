@@ -8,14 +8,14 @@
  * @size: The number of elements in array.
  * @value: The value to search for.
  *
- * Return: The index where value is located, or -1 if not found or if array is NULL.
+ * Return: The index where value is located, or -1 if not found NULL.
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-    if (array == NULL || size == 0)
-        return (-1);
+	if (array == NULL || size == 0)
+		return (-1);
 
-    return advanced_binary_helper(array, value, 0, size - 1);
+	return (advanced_binary_helper(array, value, 0, size - 1));
 }
 
 /**
@@ -29,23 +29,23 @@ int advanced_binary(int *array, size_t size, int value)
  */
 int advanced_binary_helper(int *array, int value, int start, int end)
 {
-    int mid, i;
+	int mid, i;
 
-    /* Base case: array is empty */
-    if (start > end)
-        return (-1);
+	/* Base case: array is empty */
+	if (start > end)
+		return (-1);
 
-    mid = (start + end) / 2;
+	mid = (start + end) / 2;
 
-    printf("Searching in array: ");
-    for (i = start; i <= end; i++)
-        printf("%d%s", array[i], i == end ? "\n" : ", ");
+	printf("Searching in array: ");
+	for (i = start; i <= end; i++)
+		printf("%d%s", array[i], i == end ? "\n" : ", ");
 
-    if (array[mid] == value && (mid == start || array[mid - 1] < value))
-        return (mid);
+	if (array[mid] == value && (mid == start || array[mid - 1] < value))
+		return (mid);
 
-    if (array[mid] >= value)
-        return (advanced_binary_helper(array, value, start, mid));
+	if (array[mid] >= value)
+		return (advanced_binary_helper(array, value, start, mid));
 
-    return (advanced_binary_helper(array, value, mid + 1, end));
+	return (advanced_binary_helper(array, value, mid + 1, end));
 }
