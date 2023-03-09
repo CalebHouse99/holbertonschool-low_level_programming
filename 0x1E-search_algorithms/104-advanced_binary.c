@@ -12,31 +12,10 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-    int low = 0, i, high = size - 1, mid, index = -1;
-
     if (array == NULL || size == 0)
         return (-1);
 
-    while (low <= high)
-    {
-        printf("Searching in array: ");
-        for (i = low; i <= high; i++)
-            printf("%d%s", array[i], i == high ? "\n" : ", ");
-
-        mid = (low + high) / 2;
-
-        if (array[mid] == value && (mid == low || array[mid - 1] < value))
-        {
-            index = mid;
-            break;
-        }
-        else if (array[mid] >= value)
-            high = mid;
-        else
-            low = mid + 1;
-    }
-
-    return (index);
+    return advanced_binary_helper(array, value, 0, size - 1);
 }
 
 /**
