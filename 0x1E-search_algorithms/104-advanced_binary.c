@@ -12,7 +12,7 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-    int low = 0, high = size - 1, mid, index = -1;
+    int low = 0, i, high = size - 1, mid, index = -1;
 
     if (array == NULL || size == 0)
         return (-1);
@@ -20,7 +20,7 @@ int advanced_binary(int *array, size_t size, int value)
     while (low <= high)
     {
         printf("Searching in array: ");
-        for (int i = low; i <= high; i++)
+        for (i = low; i <= high; i++)
             printf("%d%s", array[i], i == high ? "\n" : ", ");
 
         mid = (low + high) / 2;
