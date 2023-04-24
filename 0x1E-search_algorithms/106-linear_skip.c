@@ -1,4 +1,3 @@
-/* 106-linear_skip.c */
 #include <stdio.h>
 #include <math.h>
 #include "search_algos.h"
